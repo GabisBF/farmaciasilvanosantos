@@ -1,314 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/images/favicon_io/favicon.ico" type="image/x-icon">
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <!-- FAVICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
 
-    <!-- LINK DOS ÍCONES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- LINK DOS ÍCONES -->
-
-    <!-- LINK STYLE -->
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- LINK STYLE -->
-
-    <script src="./js/script.js" defer></script>
-
-    <title>Farmácia Silvano Santos</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Farmácia Silvano Santos - Onde seu bem-estar é a nossa maior prioridade! </title>
 </head>
-
 <body>
-    <div class="btn-zap">
-        <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" class="icon"><i class="bi bi-whatsapp"></i></a>
+    <div class="btn-what">
+        <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" class="icon"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
-    <div class="moving-bar">
-        <div class="text">Bem-Vindo(a) à <b>Farmácia Silvano Santos!</b></div>
-    </div><!--moving-bar-->
-
     <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./img/logo 3.png" alt="Logo da Farmácia Silvano Santos">
-                </a>
-            </div><!--logo-->
+        <nav id="navbar">
+            <img src="src/images/Logo/logo 1.png" id="nav_logo" alt="Logo Farmácia Silvano Santos">
 
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#ofertas">Ofertas</a></li>
-                    <li><a href="#sobre">Nossa História</a></li>
-                    <li><a href="#unidade">Nossas Unidades</a></li>
-                </ul>
-            </nav><!--menu-desktop-->
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ofertas">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servico">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
 
-            <div class="btn-abrir-menu" id="btn-menu">
-                <i class="bi bi-list"></i>
-            </div>
+            <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" class="btn-default">
+                Entre em contato
+            </a>
 
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div><!--btn-fechar-->
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
 
-                <nav>
-                    <ul>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#ofertas">Ofertas</a></li>
-                        <li><a href="#sobre">Nossa História</a></li>
-                        <li><a href="#unidade">Nossas Unidades</a></li>
-                        <li><a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank">Contato</a></li>
-                    </ul>
-                </nav>
-            </div><!--menu-mobile-->
-            <div class="overlay-menu"></div>
-        </div><!--interface-->
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ofertas">Ofertas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servico">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre">Sobre</a>
+                </li>
+            </ul>
+            
+            <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" class="btn-default">
+                Entre em contato
+            </a>
+        </div>
     </header>
 
-    <main>
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>PEDIU..</h1>
-                        <h1>CHEGOU!!</h1>
-                        <p>Compre seus medicamentos e produtos de saúde pelo nosso WhatsApp. A saúde e o bem-estar chegam até você com o melhor preço e qualidade. Aproveite agora mesmo!</p>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Pediu...<br>
+                    Chegou<span>!</span>
+                </h1>
 
-                        <div class="btn-contato">
-                            <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank">
-                                <button><img src="./img/whatsapp.png">PEDIR AGORA</button>
-                            </a>
-                        </div><!--btn-contato-->
-                    </div><!--txt-topo-site-->
+                <p class="description">
+                    Compre seus medicamentos e produtos de saúde pelo nosso WhatsApp. A saúde e o bem-estar chegam até você com o melhor preço e qualidade. Aproveite agora mesmo!
+                </p>
 
-                    <div class="img-topo-site">
-                        <img src="./img/motoboy.png" alt="">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-do-site-->
+                <div id="cta_buttons">
+                    <!--<a href="#" class="btn-default">
+                        Ver produtos
+                    </a>-->
 
-        <!--
-        <section class="ofertas" id="ofertas">
-            <div class="interface">
-                <h2 class="titulo">OFERTAS</h2>
-                <p class="sub">Nossas ofertas especiais para você</p>
-                <div class="flex">
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Lenco-Umedecido-Mimos-Care-120un-1024x1024.png" alt="">
-                        <p class="nome">Mimos Care - Toalha Umedecida</p>
-                        <p class="valor">R$6.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Sabonete-Rexona-Antibacterial-1024x1024.png" alt="">
-                        <p class="nome">Rexona - Antibacterial</p>
-                        <p class="valor">R$1.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Cotonete-Topz-75un-1024x1024.png" alt="">
-                        <p class="nome">Bastonetes - TOPZ</p>
-                        <p class="valor">R$1.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Bigfral-Regular-Plus-Adulto-7un-1024x1024.png" alt="">
-                        <p class="nome">BIGFRAL - Derma Plus</p>
-                        <p class="valor">R$27.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Bic-Comfort-3-1024x1024.png" alt="">
-                        <p class="nome">BIC - Comfort 3</p>
-                        <p class="valor">R$3.49</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Pomada-Marigold-Baby-Preium-Lev-3-Pague-2-1024x1024.png" alt="">
-                        <p class="nome">Marigold Baby Premium - POMADA</p>
-                        <p class="valor">R$13.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Shampoo-Baby-Baruel-400ml-1024x1024.png" alt="">
-                        <p class="nome">Shampoo - Baruel Baby</p>
-                        <p class="valor">R$12.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Locao-hidratante-Paixao-Inspiradora-200ml-1024x1024.png" alt="">
-                        <p class="nome">Deo Hidratante - Paixão</p>
-                        <p class="valor">R$11.99</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Clear-Men-Sports-Shampoo-Anti-Caspa-1024x1024.png" alt="">
-                        <p class="nome">Clear Sports Men</p>
-                        <p class="valor">R$13.49</p>
-                    </div><!--ofertas-box
-                    <div class="ofertas-box">
-                        <img src="https://farmaciasilvanosantos.com/wp-content/uploads/2024/04/Creme-dental-Oral-B-Menta-Suave-70g-1024x1024.png" alt="">
-                        <p class="nome">Creme dental - ORAL B</p>
-                        <p class="valor">R$3.99</p>
-                    </div><!--ofertas-box
-                </div><!--flex
-            </div><!--interface
-        </section><!--ofertas-->
-                    
-        <section class="servicos" id="servicos">
-            <div class="interface">
-                <h2 class="titulo"><span>SERVIÇOS</span></h2>
-                <p class="sub">Conheça nossos serviços</p>
-                <div class="flex">
-                    <div class="servicos-box">
-                        <img src="./img/farmacia.png" alt="">
-                        <h3>MELHOR PREÇO</h3>
-                        <p>Aproveite e economize ao máximo com os melhores preços disponíveis na nossa farmácia!</p>
-                    </div><!--servicos-box-->
-                    <div class="servicos-box">
-                        <img src="./img/verificacao-de-escudo.png" alt="">
-                        <h3>ATENDIMENTO COM QUALIDADE E SEGURANÇA</h3>
-                        <p>Receba um atendimento personalizado e atencioso na Farmácia Silvano Santos, garantindo seu bem-estar e tranquilidade!</p>
-                    </div><!--servicos-box-->
-                    <div class="servicos-box">
-                        <img src="./img/motocicleta.png" alt="">
-                        <h3>DELIVERY</h3>
-                        <p>Aproveite nosso serviço de delivery rápido e eficiente para receber seus produtos diretamente em casa!</p>
-                    </div><!--servicos-box-->
-                    <div class="servicos-box">
-                        <img src="./img/cartao-do-banco.png" alt="">
-                        <h3>PARCELE EM 3X</h3>
-                        <p>Facilidade de pagamento com parcelamento em até 3 vezes.</p>
-                    </div><!--servicos-box-->
-                </div><!--flex-->
-
-                <div class="btn-contato">
-                    <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank">
-                        <button><img style="width: 30px; height: 30px;"
-                                src="./img/whatsapp.png">SOLICITE AGORA</button>
+                    <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" id="phone_button" class="btn-default">
+                        <i class="fa-solid fa-phone"></i>
+                        (11) 97982-4462
                     </a>
-                </div><!--btn-contato-->
-            </div><!--interface-->
-        </section><!--servicos-->
+                </div>
 
-        <section class="unidade" id="unidade">
-            <div class="interface">
-                <h2 class="titulo">NOSSAS <span>UNIDADES</span></h2>
-                <p class="sub">Encontre a unidade mais próxima de você!</p>
-                <div class="flex">
-                    <div class="unidade-box">
-                        <h3>UNIDADE 1</h3>
-                        <img src="./img/Unidades/un1.png" alt="Unidade 1">
-                        <p class="end">Peroba, Maragogi - AL</p>
-                        <p class="tel">Telefone: <span>82 98231-2629</span></p>
-                        <a href="https://maps.app.goo.gl/5t9pbNS5NBemfYC4A" target="_blank"><button class="btn-end"><i
-                                    class="fa-solid fa-location-dot"></i>Endereço</button></a>
-                    </div>
-                    <div class="unidade-box">
-                        <h3>UNIDADE 2</h3>
-                        <img src="./img/Unidades/un02.jpg" alt="Unidade 2">
-                        <p class="end">Centro, Barreiros - PE</p>
-                        <p class="tel">Telefone: <span>81 98692-0990</span></p>
-                        <a href="https://maps.app.goo.gl/tw5L2SfkXc3BuxYo8" target="_blank"><button class="btn-end"><i
-                                    class="fa-solid fa-location-dot"></i>Endereço</button></a>
-                    </div>
-                    <div class="unidade-box">
-                        <h3>UNIDADE 3</h3>
-                        <img src="./img/Unidades/un3.PNG" alt="Unidade 3">
-                        <p class="end">Ponte Alta, Guarulhos - SP</p>
-                        <p class="tel">Telefone: <span>11 93020-0884</span></p>
-                        <a href="https://maps.app.goo.gl/15eT5iFkMfPWBLbt5" target="_blank"><button class="btn-end"><i
-                                    class="fa-solid fa-location-dot"></i>Endereço</button></a>
-                    </div>
-                    <div class="unidade-box">
-                        <h3>UNIDADE 6</h3>
-                        <img src="./img/Unidades/un06.jpg" alt="Unidade 4">
-                        <p class="end">Taboão, Guarulhos - SP</p>
-                        <p class="tel">Telefone: <span>11 97982-4462</span></p>
-                        <a href="https://maps.app.goo.gl/tQh2Cj69tJjLJ4bw5" target="_blank"><button class="btn-end"><i
-                                    class="fa-solid fa-location-dot"></i>Endereço</button></a>
-                    </div><!--unidade-box-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--unidades-->
-
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="./img/Unidades/un06.jpg" alt="">
-                    </div><!--img-sobre-->
-
-                    <div class="txt-sobre">
-                        <h2>História da Farmácia</h2>
-                        <p>A Farmácia Silvano Santos, fundada em Alagoas, trouxe sua tradição em cuidados farmacêuticos para São Paulo. Com atendimento personalizado e produtos de alta qualidade, ganhou a confiança dos residentes da cidade, tornando-se uma autoridade em saúde e bem-estar.</p>
-                    </div><!--txt-sobre-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--sobre-->
-    </main>
-
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts">
-                <div class="logo">
-                    <a href="./index.html">
-                        <img src="./img/logo.png" alt="Logo da Farmácia Silvano Santos">
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
                     </a>
-                </div><!--logo-->
-
-                <h1>FARMÁCIA SILVANO SANTOS</h1>
-                <p><span>CNPJ: </span>54.710.183/0001-68</p>
-                <p><span>Endereço: </span> Rua Jamil João Zarif, 230 - Taboão, Guarulhos - SP, 07143-000</p>
-
-                <div id="footer_social_media">
-                    <a href="https://www.instagram.com/farmaciasilvanosantos06?igsh=czBycTYzZ21iemYx" target="_blank" class="footer-link" id="instagram">
-                        <i class="bi bi-instagram"></i>
+                    <a href="https://www.instagram.com/farmaciasilvanosantos06?igsh=czBycTYzZ21iemYx" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
-
-                    <a href="https://www.facebook.com/profile.php?id=61560968222793&mibextid=ZbWKwL" target="_blank" class="footer-link" id="facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-
-                    <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" class="footer-link" id="whatsapp">
-                        <i class="bi bi-whatsapp"></i>
+                    <a href="https://www.facebook.com/profile.php?id=61560968222793&mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
                     </a>
                 </div>
             </div>
 
-            <ul class="footer-hour">
+            <div id="banner">
+                <img src="src/images/motoboy.png" alt="Imagem de um motoboy">
+            </div>
+        </section>
+
+        <section id="ofertas">
+            <h2 class="section-title">Ofertas</h2>
+            <h3 class="section-subtitle">Nossas ofertas de inauguração</h3>
+            
+            <div id="offers">
+                <div class="offer">
+                    <img src="https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/54077/medium/cereal-neston-3-cereais-360g_100772.png" class="offers-image" alt="Nestlê - Cereal Neston 3 cereais">
+
+                    <h3 class="offer-title">
+                        Nestlé - Cereal Neston 3 cereais
+                    </h3>
+
+                    <div class="offer-price">
+                        R$15.99
+                    </div>
+                </div>
+
+                <div class="offer">
+                    <img src="https://cdn.awsli.com.br/600x450/171/171149/produto/160443166/27da6c2645.jpg" class="offers-image" alt="Guto - Fralda descartável">
+
+                    <h3 class="offer-title">
+                        Guto - Fralda descartável
+                    </h3>
+
+                    <div class="offer-price">
+                        R$42.99
+                    </div>
+                </div>
+
+                <div class="offer">
+                    <img src="src/images/Produtos/4268d514-7f65-4c5c-ac40-4097616b8ad6.jpeg" class="offers-image" alt="Tok Bothânico - Shampoo e Condicionador">
+
+                    <h3 class="offer-title">
+                        Tok Bothânico - Shampoo e Condicionador
+                    </h3>
+
+                    <div class="offer-price">
+                        R$10.99
+                    </div>
+                </div>
+
+                <div class="offer">
+                    <img src="src/images/Produtos/553de80e-6873-4422-815f-12b1c9d8c052.jpeg" class="offers-image" alt="Nestlê - Cereal Neston 3 cereais">
+
+                    <h3 class="offer-title">
+                        Nutriex - Spray Repelente de Insetos para a pele
+                    </h3>
+
+                    <div class="offer-price">
+                        R$13.99
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="servico">
+            <h2 class="section-title">Serviços</h2>
+            <h3 class="section-subtitle">Nossos serviços</h3>
+
+            <div id="services">
+                <div class="service">
+                    <img src="src/images/farmacia.png" class="service-image" alt="Melhor preço">
+
+                    <h3 class="service-title">
+                        Melhor Preço
+                    </h3>
+
+                    <span class="service-description">
+                        Aproveite e economize ao máximo com os melhores preços disponíveis na nossa farmácia!
+                    </span>
+                </div>
+
+                <div class="service">
+                    <img src="src/images/verificacao-de-escudo.png" class="service-image" alt="Atendimento com qualidade e segurança">
+
+                    <h3 class="service-title">
+                        Atendimento com Qualidade e Segurança
+                    </h3>
+
+                    <span class="service-description">
+                        Receba um atendimento personalizado e atencioso na Farmácia Silvano Santos, garantindo seu bem-estar e tranquilidade!
+                    </span>
+                </div>
+
+                <div class="service">
+                    <img src="src/images/motocicleta.png" class="service-image" alt="Delivery">
+
+                    <h3 class="service-title">
+                        Delivery
+                    </h3>
+
+                    <span class="service-description">
+                        Aproveite nosso serviço de delivery rápido e eficiente para receber seus produtos diretamente em casa!
+                    </span>
+                </div>
+
+                <div class="service">
+                    <img src="src/images/cartao-do-banco.png" class="service-image" alt="Parcele em 3x">
+
+                    <h3 class="service-title">
+                        Parcele em 3x
+                    </h3>
+
+                    <span class="service-description">
+                        Facilidade de pagamento com parcelamento em até 3 vezes.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <img src="src/images/Unidades/Un06.jpeg" id="sobre-image" alt="Imagem da unidade da farmácia">
+
+            <div id="sobre_content">
+                <h2 class="sobre-title">
+                    História da Farmácia
+                </h2>
+
+                <p class="sobre-description">
+                    A Farmácia Silvano Santos, fundada em Alagoas, trouxe sua tradição em cuidados farmacêuticos para São Paulo. Com atendimento personalizado e produtos de alta qualidade, ganhou a confiança dos residentes da cidade, tornando-se uma autoridade em saúde e bem-estar.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <img src="src/images/Logo/logo.png" alt="" class="footer-image">
+        </div>
+
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1 class="section-subtitle">Farmácia Silvano Santos</h1>
+                <p class="footer-description"><span>CNPJ: </span>54.710.183/0001-68</p>
+                <P class="footer-description"><span>Endereço: </span>Rua Jamil João Zarif, 144 - Taboão , Guarulhos - SP, 07143-000</P>
+
+                <div class="social-media-buttons">
+                    <a href="https://wa.me/message/UK2GPRW4XRY3O1" target="_blank" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/farmaciasilvanosantos06?igsh=czBycTYzZ21iemYx" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61560968222793&mibextid=ZbWKwL" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul id="footer-hour">
                 <li>
-                    <p><span>Horário de entrega:</span></p>
-                    <p><span>De segunda à sábado das 7h às 22h</span></p>
-                    <p><span>Domingo das 7h às 15h</span></p>
-                    <p style="font-weight: 300; font-size: 12px;">*Valor mínimo de compra R$10,00 com taxa de R$4,00, acima de R$25,00
-                        fretes grátis* </p>
+                    <p class="footer-des">Horário de Funcionamento:</p>
+                    <p class="footer-description">De segunda à sabádo das 7h às 21h e Domingo das 7h às 18h.</p>
                 </li>
 
                 <li>
-                    <p><span>Horário de Funcionamento:</span></p>
-                    <p><span>De Segunda a Sábado das 7h às 22h e Domingo das 7h às 15h.</span></p>
+                    <p class="footer-description"><span>*Valor mínimo de compra R$10.00 com taxa de R$4.00, acima de R$25.00 frete grátis*</span></p>
                 </li>
 
                 <li>
-                    <p><span>Formas de Pagamento:</span></p>
+                    <p class="footer-des">Formas de Pagamentos:</p>
                     <div class="img-fp">
-                        <img class="img1" src="./img/mastercard-icon-2048x1587-tygju446.png">
-                        <img class="img2" src="./img/visa-icon-2048x628-6yzgq2vq.png">
-                        <img class="img3" src="./img/PIX_Logo.png">
+                        <img src="src/images/mastercard-icon-2048x1587-tygju446.png" alt="" class="img1">
+                        <img src="src/images/visa-icon-2048x628-6yzgq2vq.png" alt="" class="img2">
+                        <img src="src/images/PIX_Logo.png" alt="" class="img3">
                     </div>
                 </li>
             </ul>
         </div>
 
-        <div id="footer_copyright">
+        <span id="copyright">
             &copy; 2024 Farmácia Silvano Santos - Todos os Direitos Reservados.
-        </div>
+        </span>
 
-        <div class="des">
-            <a href="https://www.instagram.com/bf_website?igsh=Zjg0cnhtN2p6cHJt" target="_blank"><p>GABRIEL<span>BRITO</span></p></a>
-            
-        </div> 
+        <div class="desenvolvedor">
+            <a href="https://www.instagram.com/bf_website?igsh=Zjg0cnhtN2p6cHJt" target="_blank" class="desen">GABRIEL<span>BRITO</span></a>
+        </div>    
     </footer>
+
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>
