@@ -41,7 +41,7 @@
     color: #ffffff;
 }
 
-#phone_button {
+#cta_buttons #phone_button {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -51,14 +51,34 @@
     font-weight: 500;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
+    animation: pular 2s ease-in-out infinite;
 }
 
 #cta_buttons #phone_button {
     color: #FF2121;
 }
 
+#cta_buttons #phone_button:hover{
+    background-color: #FF2121;
+}
+
+#cta_buttons #phone_button:hover {
+    color: #ffffff;
+}
+
 #phone_button button {
     box-shadow: none;
+}
+
+
+@keyframes pular {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    
 }
 
 #banner {

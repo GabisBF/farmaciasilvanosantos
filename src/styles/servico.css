@@ -74,7 +74,13 @@
     font-size: 45px;
     font-weight: 800;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 50PX;
+    border-radius: 50px;
+    transition: padding 0.5s, font-size 0.5s;
+}
+
+#servico #phone_button:hover{
+    padding: 22px 26px;
+    font-size: 50px;
 }
 
 #servico #phone_button {
