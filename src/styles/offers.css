@@ -3,15 +3,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 30vh;
+}
+
+#ofertas .section-title{
+    font-size: 50px;
 }
 
 #offers{
+    margin-top: 10vh;
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
+    gap: 20px;
 }
 
 .offer{
@@ -19,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    gap: 18px;
+    gap: 20px;
     width: 25%;
     padding: 20px;
     background-color: var(--color-neutral-0);
@@ -28,20 +32,22 @@
 }
 
 .offers-image{
-    width: 80%;
+    width: 85%;
 }
 
 .offer-title{
+    margin-top: 20px;
     color: #ff2121;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 25px;
     list-style: 16px;
     text-align: center;
 }
 
 .offer-price{
+    margin: auto 0 ;
     color: #ff2121;
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -57,6 +63,23 @@
     .offer{
         width: calc(50% - 12px);
     }
+
+    #ofertas .section-title{
+        font-size: 40px;
+    }
+    
+    .offers-image{
+        width: 70%;
+    }
+    
+    .offer-title{
+        font-size: 20px;
+    }
+    
+    .offer-price{
+        font-size: 40px;
+        margin-top: -20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -66,5 +89,35 @@
 
     #ofertas .section-subtitle{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .offer{
+        width: 100%;
+    }
+
+    #ofertas .section-subtitle{
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    #ofertas .section-title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .offers-image{
+        width: 60%;
+    }
+    
+    .offer-title{
+        font-size: 16px;
+    }
+    
+    .offer-price{
+        font-size: 30px;
     }
 }

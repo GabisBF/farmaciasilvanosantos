@@ -1,15 +1,14 @@
 footer{
-    margin-top: 50px;
     border-top: solid #ff2121 3px ;
     display: flex;
     flex-direction: column;
-    padding: 20px 8%;
+    padding: 20px 2%;
     justify-content: center;
 }
 
 .footer-image{
-    margin-top: 40px;
-    width: 400px;
+    margin-top: 30px;
+    width: 450px;
 }
 
 #footer_content{
@@ -19,53 +18,49 @@ footer{
     padding: 20px;
 }
 
-#footer_contacts .section-subtitle{
+#footer_contacts .section-title{
+    color: #1d1d1d;
+    font-weight: 700;
     text-align: left;
-    font-size: 35px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
 #footer_contacts .footer-description{
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 30px;
 }
 
 #footer_contacts .footer-description span{
     font-weight: 700;
-    font-size: 16px;
 }
 
 #footer_contacts .social-media-buttons {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 #footer-hour{
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 20px;
     list-style: none; 
 }
 
 #footer-hour .footer-des{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #footer-hour .footer-description{
     font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 #footer-hour .footer-description span{
     font-weight: 400;
-    font-size: 14px;
-}
-
-#copyright{
-    margin-top: 30px;
-    font-weight: 600;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: 200;
+    font-size: 18px;
 }
 
 footer.img-fp{
@@ -76,19 +71,22 @@ footer.img-fp{
 }
 
 footer .img-fp .img1{
-    width: 40px;
+    width: 60px;
     height: auto;
+    margin-top: 20px;
 }
 
 footer .img-fp .img2{
-    width: 65px;
+    width: 85px;
     height: auto;
+    margin-top: 20px;
     margin-bottom: 5px;
 }
 
 footer .img-fp .img3{
-    width: 75px;
+    width: 95px;
     height: auto;
+    margin-top: 20px;
 }
 
 .desenvolvedor{
@@ -97,19 +95,20 @@ footer .img-fp .img3{
 }
 
 .desenvolvedor .desen{
+    font-size: 25px;
     text-decoration: none;
     color: #919191;
-    font-family: "Bodoni Moda", serif;
-    font-weight: 700;
+    font-weight: 900;
+    letter-spacing: -1px;
 }
 
 .desenvolvedor .desen span {
     color: #3a3a3a;
-    font-family: "Bodoni Moda", serif;
 }
 
 @media screen and (max-width: 600px) {
     footer{
+        text-align: center;
         align-items: center;
         padding: 4%;
         justify-content: center;
@@ -124,53 +123,121 @@ footer .img-fp .img3{
         grid-template-columns: 1fr;
     }
 
-    #footer_contacts .section-subtitle{
+    #footer_contacts .social-media-buttons{
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        font-size: 22px;
     }
-    
-    #footer_contacts .footer-description span{
-        font-size: 14px;
+
+    #footer_contacts .section-title{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 38px;
     }
 
     #footer_contacts .footer-description{
-        font-size: 12px;
+        text-align: center;
+        font-size: 18px;
     }
 
-    .social-media-buttons a {
-        width: 35px;
-        height: 30px;
-        font-size: 1.2rem;
+    #footer_contacts .social-media-buttons a {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
     }
 
     #footer-hour .footer-des{
-        font-size: 14px;
+        font-size: 20px;
     }
 
     #footer-hour .footer-description{
-        font-size: 12px;
+        font-size: 20px;
     }
     
     #footer-hour .footer-description span{
-        font-size: 10px;
+        font-size: 18px;
     }
-    
-    #copyright{
-        font-size: 0.7rem;
+
+    footer .img-fp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
     }
     
     footer .img-fp .img1{
+        width: 50px;
+        height: auto;
+        margin-bottom: -10px;
+    }
+    
+    footer .img-fp .img2{
+        width: 75px;
+        height: auto;
+        margin-bottom: -10px;
+    }
+    
+    footer .img-fp .img3{
+        width: 85px;
+        height: auto;
+        margin-bottom: -10px;
+    }
+
+    .desenvolvedor .desen{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .footer-image{
+        width: 180px;
+    }
+
+    #footer_contacts .section-title{
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    #footer_contacts .footer-description{
+        font-size: 16px;
+    }
+
+    #footer_contacts .social-media-buttons a {
         width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    #footer-hour .footer-des{
+        font-size: 16px;
+    }
+
+    #footer-hour .footer-description{
+        font-size: 16px;
+    }
+    
+    #footer-hour .footer-description span{
+        font-size: 14px;
+    }
+    
+    footer .img-fp .img1{
+        width: 40px;
         height: auto;
     }
     
     footer .img-fp .img2{
-        width: 55px;
+        width: 65px;
         height: auto;
     }
     
     footer .img-fp .img3{
-        width: 65px;
+        width: 75px;
         height: auto;
+    }
+
+    .desenvolvedor .desen{
+        font-size: 14px;
     }
 }

@@ -15,7 +15,7 @@ header {
 }
 
 #nav_logo {
-    width: 280px;
+    width: 380px;
 }
 
 #nav_list {
@@ -26,7 +26,7 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #ffffff;
+    color: #ffffff;font-size: 22px;
     font-weight: 600;
 }
 
@@ -78,5 +78,11 @@ header {
     #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #nav_logo {
+        width: 130px;
     }
 }

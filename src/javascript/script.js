@@ -33,38 +33,33 @@ $(document).ready(function() {
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
+    
     ScrollReveal().reveal('#banner', {
-        origin: 'right',
+        origin: 'rigth',
         duration: 4000,
-        distance: '50%'
+        distance: '10%'
     });
 
     ScrollReveal().reveal('#cta', {
         origin: 'left',
-        duration: 2000,
+        duration: 3000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('.offer', {
-        origin: 'left',
-        duration: 2000,
-        distance: '20%'
+        origin: 'bottom',
+        duration: 3000,
+        distance: '40%'
     });
 
     ScrollReveal().reveal('#servico', {
-        origin: 'rigth',
+        origin: 'left',
         duration: 2000,
         distance: '20%'
     });
 
     ScrollReveal().reveal('#sobre-image', {
         origin: 'left',
-        duration: 2500,
-        distance: '30%'
-    });
-
-    ScrollReveal().reveal('#sobre_content', {
-        origin: 'rigth',
         duration: 2500,
         distance: '30%'
     });
