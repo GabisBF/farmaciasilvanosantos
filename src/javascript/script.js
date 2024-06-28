@@ -33,7 +33,7 @@ $(document).ready(function() {
         $(navItems[activeSectionIndex]).addClass('active');
     });
 
-    
+    /*
     ScrollReveal().reveal('#banner', {
         origin: 'rigth',
         duration: 4000,
@@ -62,5 +62,5 @@ $(document).ready(function() {
         origin: 'left',
         duration: 2500,
         distance: '30%'
-    });
+    });*/
 });

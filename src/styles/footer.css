@@ -7,8 +7,8 @@ footer{
 }
 
 .footer-image{
-    margin: 50px 250px 50px;
-    width: 500px;
+    margin: 50px 150px 50px;
+    width: 350px;
 }
 
 #footer_content{
@@ -19,16 +19,16 @@ footer{
 }
 
 #footer_contacts .section-title{
-    color: #1d1d1d;
+    color: #000000;
     font-weight: 700;
     text-align: left;
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 #footer_contacts .footer-description{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 30px;
 }
 
@@ -49,18 +49,18 @@ footer{
 
 #footer-hour .footer-des{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #footer-hour .footer-description{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 10px;
 }
 
 #footer-hour .footer-description span{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 footer.img-fp{
@@ -99,7 +99,7 @@ footer .img-fp .img3{
     text-decoration: none;
     color: #919191;
     font-weight: 900;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
 }
 
 .desenvolvedor .desen span {
